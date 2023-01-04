@@ -8,14 +8,82 @@
         xmlns:vmb="clr-namespace:Module1.ViewModels.Base"
         mc:Ignorable="d"
         Title="{Binding Title}"
-        Height="450" Width="800">
+        Height="600" Width="900"
+        WindowState="Maximized">
     <Window.DataContext>
         <vm:MainWindowViewModel></vm:MainWindowViewModel>
     </Window.DataContext>
-       
-    
-    
-    <Grid>
 
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <DockPanel Grid.Row="0">
+            <Menu DockPanel.Dock="Top">
+                <MenuItem Header="Файл"></MenuItem>
+                <MenuItem Header="Помощь"></MenuItem>
+                <MenuItem Header="О программе"></MenuItem>
+            </Menu>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" DockPanel.Dock="Bottom" Margin="10,10,20,10">
+                <Button Height="40" Width="70" HorizontalAlignment="Right" Margin="10,10,20,10" Content="Назад" FontSize="18"></Button>
+                <Button Height="40" Width="70" HorizontalAlignment="Right" Content="Далее" FontSize="18"></Button>
+            </StackPanel>
+
+
+            <StackPanel Orientation="Vertical">
+                <DockPanel>
+                    <GroupBox DockPanel.Dock="Top">
+                        <TextBlock>
+                            <TextBlock FontSize="16" Margin="10,5,5,5">
+                                    <StackPanel Orientation="Vertical">
+                                        <TextBlock Text="Расчет подпора воздуха в лифтовую шахту проводится для случая:" FontSize="18" FontWeight="Bold"></TextBlock>
+                                        <TextBlock Text="- лифтовая шахта расположена в ядре здания и не имеет примыкания к наружно стене;" Margin="5"></TextBlock>
+                                        <TextBlock Text="- лифтовая шахта обслуживает только надземные этажи;" Margin="5"></TextBlock>
+                                        <TextBlock Text="- на основном расчетном этаже и других этажах предусмотрены обособленные лифтовые холлы." Margin="5"></TextBlock>
+                                    </StackPanel>
+                                </TextBlock>
+                        </TextBlock>
+                    </GroupBox>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <TextBlock Text="Рисунок 1. Лифтовой узел на основном расчетном этаже" 
+                                   Grid.Column="0" 
+                                   HorizontalAlignment="Center"
+                                   FontWeight="Bold"
+                                   FontSize="18"
+                                   ></TextBlock>
+                        <TextBlock Text="Рисунок 2. Схема подачи воздуха в лифтовую шахту" 
+                                   Grid.Column="1" 
+                                   HorizontalAlignment="Center"
+                                   FontWeight="Bold"
+                                   FontSize="18"></TextBlock>
+                        <Image  Source="../../Images/Image1.PNG" Grid.Row="1" Grid.Column="0" Height="750" VerticalAlignment="Top" HorizontalAlignment="Center"></Image>
+                        <Image  Source="../../Images/Image2.PNG" 
+                                Grid.Row="1" Grid.Column="1" 
+                                Height="750" 
+                                VerticalAlignment="Top" 
+                                HorizontalAlignment="Center"></Image>
+                    </Grid>
+                   
+                </DockPanel>
+               
+            </StackPanel>
+        </DockPanel>
+        <StatusBar VerticalAlignment="Bottom" Grid.Row="1">
+            <StatusBarItem MaxHeight="150" MaxWidth="350">
+                <TextBlock Text="Привет"></TextBlock>
+            </StatusBarItem>
+            <StatusBarItem>
+                <ProgressBar Width="200" Height="15" Value="50"></ProgressBar>
+            </StatusBarItem>
+        </StatusBar>
     </Grid>
 </Window>

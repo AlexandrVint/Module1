@@ -6,7 +6,8 @@
         xmlns:local="clr-namespace:Module1WPFtest"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
 
+    <Grid>
+        <Image Source="images/Image1.png"></Image>
     </Grid>
 </Window>
