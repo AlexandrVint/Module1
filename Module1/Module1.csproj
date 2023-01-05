@@ -16,7 +16,6 @@
 
   <ItemGroup>
     <Folder Include="Infrastructure\Converters\" />
-    <Folder Include="Infrastructure\Commands\" />
     <Folder Include="Models\" />
     <Folder Include="Resources\Styles\" />
   </ItemGroup>

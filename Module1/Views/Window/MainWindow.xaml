@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:Module1"
         xmlns:vm="clr-namespace:Module1.ViewModels"
         xmlns:vmb="clr-namespace:Module1.ViewModels.Base"
+        xmlns:fa="http://schemas.fontawesome.com/icons/"
         mc:Ignorable="d"
         Title="{Binding Title}"
         Height="600" Width="900"
@@ -15,19 +16,47 @@
     </Window.DataContext>
 
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="21*"/>
+        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition></RowDefinition>
             <RowDefinition Height="Auto"></RowDefinition>
         </Grid.RowDefinitions>
-        <DockPanel Grid.Row="0">
+        <DockPanel Grid.Row="0" Grid.ColumnSpan="2">
             <Menu DockPanel.Dock="Top">
-                <MenuItem Header="Файл"></MenuItem>
+                <MenuItem Header="Файл">
+                    <MenuItem Header="Открыть" FontSize="12">
+                        <MenuItem.Icon>
+                            <fa:FontAwesome Icon="Regular_File" Height="12"></fa:FontAwesome>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="Сохранить">
+                        <MenuItem.Icon>
+                            <fa:FontAwesome Icon="Regular_Save"  Height="20"></fa:FontAwesome>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="Закрыть" Command="{Binding CloseApplicationCommand}">
+                        <MenuItem.Icon>
+                            <fa:FontAwesome Icon="Solid_DoorClosed"  Height="20"></fa:FontAwesome>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                </MenuItem>
                 <MenuItem Header="Помощь"></MenuItem>
                 <MenuItem Header="О программе"></MenuItem>
             </Menu>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" DockPanel.Dock="Bottom" Margin="10,10,20,10">
                 <Button Height="40" Width="70" HorizontalAlignment="Right" Margin="10,10,20,10" Content="Назад" FontSize="18"></Button>
-                <Button Height="40" Width="70" HorizontalAlignment="Right" Content="Далее" FontSize="18"></Button>
+                <Button Height="40" Width="70" 
+                        HorizontalAlignment="Right" 
+                        Content="Далее" 
+                        FontSize="18"
+                        Command="{Binding OpenInialDataWindow}">
+                    <Button.Triggers>
+                        
+                    </Button.Triggers>
+                </Button>
             </StackPanel>
 
 
@@ -72,12 +101,12 @@
                                 VerticalAlignment="Top" 
                                 HorizontalAlignment="Center"></Image>
                     </Grid>
-                   
+
                 </DockPanel>
-               
+
             </StackPanel>
         </DockPanel>
-        <StatusBar VerticalAlignment="Bottom" Grid.Row="1">
+        <StatusBar VerticalAlignment="Center" Grid.Row="1" Grid.ColumnSpan="2">
             <StatusBarItem MaxHeight="150" MaxWidth="350">
                 <TextBlock Text="Привет"></TextBlock>
             </StatusBarItem>
