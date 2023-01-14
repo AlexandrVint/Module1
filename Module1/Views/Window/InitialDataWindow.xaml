@@ -3,6 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:xwpftk="http://schemas.xceed.com/wpf/xaml/toolkit"
         xmlns:local="clr-namespace:Module1"
         mc:Ignorable="d"
         Title="InitialDataWindow" Height="600" Width="400" MinWidth="400" MaxWidth="400">
@@ -22,31 +23,39 @@
                     </Grid.RowDefinitions>
                     <Label Content="Температура наружного воздуха, (℃)" 
                            Grid.Column="0" Grid.Row="0"></Label>
-                    <TextBox HorizontalAlignment="Stretch" 
-                             Grid.Column="1" 
-                             VerticalContentAlignment="Center" 
-                             HorizontalContentAlignment="Center"
-                             Grid.Row="0" 
-                             Margin="3" 
-                             MaxLength="2"/>
+                    <xwpftk:DoubleUpDown Grid.Row="0" 
+                                         Grid.Column="1"
+                                         Increment="0.01"
+                                         Margin="3"
+                                         FormatString="F"
+                                         VerticalContentAlignment="Center" 
+                                         HorizontalContentAlignment="Center"
+                                         Height="19.96"
+                                         
+                    ></xwpftk:DoubleUpDown>
                     <Label Content="Температура внутреннего воздуха в здании, (℃)" 
                            Grid.Column="0" Grid.Row="1"></Label>
-                    <TextBox HorizontalAlignment="Stretch"  
-                             Grid.Column="1" 
-                             VerticalContentAlignment="Center" 
-                             HorizontalContentAlignment="Center"
-                             Grid.Row="1" 
-                             Margin="3" 
-                             MaxLength="2"/>
+                    <xwpftk:DoubleUpDown Grid.Row="1" 
+                                         Grid.Column="1"
+                                         Increment="0.01"
+                                         Margin="3"
+                                         FormatString="F"
+                                         VerticalContentAlignment="Center" 
+                                         HorizontalContentAlignment="Center"
+                                         Height="19.96"
+                                         
+                    ></xwpftk:DoubleUpDown>
                     <Label Content="Скорость наружного воздуха, (м/с)" 
                            Grid.Column="0" Grid.Row="2"></Label>
-                    <TextBox HorizontalAlignment="Stretch"  
-                             Grid.Column="1" 
-                             VerticalContentAlignment="Center" 
-                             HorizontalContentAlignment="Center"
-                             Grid.Row="2" 
-                             Margin="3" 
-                             MaxLength="2"/>
+                    <xwpftk:DoubleUpDown Grid.Row="2" 
+                                         Grid.Column="1"
+                                         Margin="3"
+                                         VerticalContentAlignment="Center" 
+                                         HorizontalContentAlignment="Center"
+                                         Height="19.96"
+                                         Minimum="0"
+                                         
+                    ></xwpftk:DoubleUpDown>
                 </Grid>
             </GroupBox>
 
@@ -66,51 +75,72 @@
                     </Grid.RowDefinitions>
                     <Label Content="Количество кабин в лифтовой шахте, (шт.)" 
                            Grid.Column="0" Grid.Row="0"></Label>
-                    <TextBox HorizontalAlignment="Stretch"  
-                             Grid.Column="1" 
-                             VerticalContentAlignment="Center" 
-                             HorizontalContentAlignment="Center"
-                             Grid.Row="0" 
-                             Margin="3" 
-                             MaxLength="2" 
-                            />
+                    <xwpftk:DoubleUpDown Grid.Row="0" 
+                                         Grid.Column="1"
+                                         Increment="1"
+                                         Margin="3"
+                                         VerticalContentAlignment="Center" 
+                                         HorizontalContentAlignment="Center"
+                                         Height="19.96"
+                                         Minimum="0"
+                    ></xwpftk:DoubleUpDown>
                     <Label Grid.Column="0" Grid.Row="1">
                         <TextBlock Text="Высота дверного проема лифтовой шахты на основном расчетном этаже,(м)"
                                    TextWrapping="Wrap"/>
                     </Label>
-                    <TextBox Grid.Column="1" 
-                             VerticalContentAlignment="Center" 
-                             HorizontalContentAlignment="Center"
-                             HorizontalAlignment="Stretch"
-                             Grid.Row="1"  
-                             MaxLength="2" 
-                              Height="19.96"      
-                             Margin="3"/>
+                    <xwpftk:DoubleUpDown Grid.Row="1" 
+                                         Grid.Column="1"
+                                         Increment="0.01"
+                                         Margin="3"
+                                         FormatString="F"
+                                         VerticalContentAlignment="Center" 
+                                         HorizontalContentAlignment="Center"
+                                         Height="19.96"
+                                         Minimum="0"
+                    ></xwpftk:DoubleUpDown>
                     <Label Grid.Column="0" Grid.Row="2">
                         <TextBlock Text="Ширина дверного проема лифтовой шахты на основном расчетном этаже,(м)"
                                    TextWrapping="Wrap"/>
                     </Label>
-                    <TextBox Grid.Column="1" 
-                             VerticalContentAlignment="Center" 
-                             HorizontalContentAlignment="Center"
-                             HorizontalAlignment="Stretch"
-                             Grid.Row="2"  
-                             MaxLength="2" 
-                             Height="19.96"      
-                             Margin="3"/>
+                    <xwpftk:DoubleUpDown Grid.Row="2" 
+                                         Grid.Column="1"
+                                         Increment="0.01"
+                                         Margin="3"
+                                         FormatString="F"
+                                         VerticalContentAlignment="Center" 
+                                         HorizontalContentAlignment="Center"
+                                         Height="19.96"
+                                         Minimum="0"
+                    ></xwpftk:DoubleUpDown>
                     <Label Grid.Column="0" Grid.Row="3">
                         <TextBlock Text="Площадь дверного проема лифтовой шахты на основном расчетном этаже,(м²)"
                                    TextWrapping="Wrap"/>
                     </Label>
-                    <TextBox Grid.Column="1" 
-                             VerticalContentAlignment="Center" 
-                             HorizontalContentAlignment="Center"
-                             HorizontalAlignment="Stretch"
-                             Grid.Row="3"  
-                             MaxLength="2" 
-                             Height="19.96"      
-                             Margin="3"
-                             />
+                    <xwpftk:DoubleUpDown Grid.Row="3" 
+                                         Grid.Column="1"
+                                         Increment="0.01"
+                                         Margin="3"
+                                         FormatString="F"
+                                         VerticalContentAlignment="Center" 
+                                         HorizontalContentAlignment="Center"
+                                         Height="19.96"
+                                         Minimum="0"
+                    ></xwpftk:DoubleUpDown>
+                    <Label Grid.Column="0" Grid.Row="4">
+                        <TextBlock Text="Площадь поперечного сечения кабины лифта (по внешнему контуру ограждения кабины,(м²)"
+                                   TextWrapping="Wrap"/>
+                    </Label>
+                    <xwpftk:DoubleUpDown Grid.Row="4" 
+                                         Grid.Column="1"
+                                         Increment="0.01"
+                                         Margin="3"
+                                         FormatString="F"
+                                         VerticalContentAlignment="Center" 
+                                         HorizontalContentAlignment="Center"
+                                         Height="19.96"
+                                         Minimum="0"
+                    ></xwpftk:DoubleUpDown>
+
 
 
 
