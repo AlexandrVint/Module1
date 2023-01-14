@@ -7,6 +7,9 @@
         xmlns:vm="clr-namespace:Module1.ViewModels"
         xmlns:vmb="clr-namespace:Module1.ViewModels.Base"
         xmlns:fa="http://schemas.fontawesome.com/icons/"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        xmlns:ei="http://schemas.microsoft.com/expression/2010/interactions"
+        
         mc:Ignorable="d"
         Title="{Binding Title}"
         Height="600" Width="900"
@@ -53,9 +56,8 @@
                         Content="Далее" 
                         FontSize="18"
                         Command="{Binding OpenInialDataWindow}">
-                    <Button.Triggers>
-                        
-                    </Button.Triggers>
+
+                 
                 </Button>
             </StackPanel>
 
