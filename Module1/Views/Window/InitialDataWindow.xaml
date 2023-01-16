@@ -6,14 +6,14 @@
         xmlns:xwpftk="http://schemas.xceed.com/wpf/xaml/toolkit"
         xmlns:local="clr-namespace:Module1"
         mc:Ignorable="d"
-        Title="InitialDataWindow" Height="600" Width="400" MinWidth="400" MaxWidth="400">
+        Title="InitialDataWindow" Height="850" Width="440" MinWidth="440" MaxWidth="440" MinHeight="850" MaxHeight="850">
     <Grid>
         <StackPanel Orientation="Vertical">
             <GroupBox Header="Климатические памаетры" HorizontalAlignment="Stretch" 
-                      Margin="3">
+                      Margin="5">
                 <Grid>
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="300"></ColumnDefinition>
+                        <ColumnDefinition Width="330"></ColumnDefinition>
                         <ColumnDefinition></ColumnDefinition>
                     </Grid.ColumnDefinitions>
                     <Grid.RowDefinitions>
@@ -21,7 +21,7 @@
                         <RowDefinition></RowDefinition>
                         <RowDefinition></RowDefinition>
                     </Grid.RowDefinitions>
-                    <Label Content="Температура наружного воздуха, (℃)" 
+                    <Label Content="Температура наружного воздуха, (℃):" 
                            Grid.Column="0" Grid.Row="0"></Label>
                     <xwpftk:DoubleUpDown Grid.Row="0" 
                                          Grid.Column="1"
@@ -33,7 +33,7 @@
                                          Height="19.96"
                                          
                     ></xwpftk:DoubleUpDown>
-                    <Label Content="Температура внутреннего воздуха в здании, (℃)" 
+                    <Label Content="Температура внутреннего воздуха в здании, (℃):" 
                            Grid.Column="0" Grid.Row="1"></Label>
                     <xwpftk:DoubleUpDown Grid.Row="1" 
                                          Grid.Column="1"
@@ -45,7 +45,7 @@
                                          Height="19.96"
                                          
                     ></xwpftk:DoubleUpDown>
-                    <Label Content="Скорость наружного воздуха, (м/с)" 
+                    <Label Content="Скорость наружного воздуха, (м/с):" 
                            Grid.Column="0" Grid.Row="2"></Label>
                     <xwpftk:DoubleUpDown Grid.Row="2" 
                                          Grid.Column="1"
@@ -59,11 +59,11 @@
                 </Grid>
             </GroupBox>
 
-            <GroupBox Header="Информация о лестнично-лифтовом узле" 
-                      Margin="3">
+            <GroupBox Header="Информация о лестнично-лифтовом узле:" 
+                      Margin="5">
                 <Grid>
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="300"></ColumnDefinition>
+                        <ColumnDefinition Width="330"></ColumnDefinition>
                         <ColumnDefinition></ColumnDefinition>
                     </Grid.ColumnDefinitions>
                     <Grid.RowDefinitions>
@@ -73,7 +73,7 @@
                         <RowDefinition></RowDefinition>
                         <RowDefinition></RowDefinition>
                     </Grid.RowDefinitions>
-                    <Label Content="Количество кабин в лифтовой шахте, (шт.)" 
+                    <Label Content="Количество кабин в лифтовой шахте, (шт.):" 
                            Grid.Column="0" Grid.Row="0"></Label>
                     <xwpftk:DoubleUpDown Grid.Row="0" 
                                          Grid.Column="1"
@@ -85,7 +85,7 @@
                                          Minimum="0"
                     ></xwpftk:DoubleUpDown>
                     <Label Grid.Column="0" Grid.Row="1">
-                        <TextBlock Text="Высота дверного проема лифтовой шахты на основном расчетном этаже,(м)"
+                        <TextBlock Text="Высота дверного проема лифтовой шахты на основном расчетном этаже, (м):"
                                    TextWrapping="Wrap"/>
                     </Label>
                     <xwpftk:DoubleUpDown Grid.Row="1" 
@@ -99,7 +99,7 @@
                                          Minimum="0"
                     ></xwpftk:DoubleUpDown>
                     <Label Grid.Column="0" Grid.Row="2">
-                        <TextBlock Text="Ширина дверного проема лифтовой шахты на основном расчетном этаже,(м)"
+                        <TextBlock Text="Ширина дверного проема лифтовой шахты на основном расчетном этаже, (м):"
                                    TextWrapping="Wrap"/>
                     </Label>
                     <xwpftk:DoubleUpDown Grid.Row="2" 
@@ -113,7 +113,7 @@
                                          Minimum="0"
                     ></xwpftk:DoubleUpDown>
                     <Label Grid.Column="0" Grid.Row="3">
-                        <TextBlock Text="Площадь дверного проема лифтовой шахты на основном расчетном этаже,(м²)"
+                        <TextBlock Text="Площадь дверного проема лифтовой шахты на основном расчетном этаже, (м²):"
                                    TextWrapping="Wrap"/>
                     </Label>
                     <xwpftk:DoubleUpDown Grid.Row="3" 
@@ -127,7 +127,158 @@
                                          Minimum="0"
                     ></xwpftk:DoubleUpDown>
                     <Label Grid.Column="0" Grid.Row="4">
-                        <TextBlock Text="Площадь поперечного сечения кабины лифта (по внешнему контуру ограждения кабины,(м²)"
+                        <TextBlock Text="Площадь поперечного сечения кабины лифта (по внешнему контуру ограждения кабины, (м²):"
+                                   TextWrapping="Wrap"/>
+                    </Label>
+                    <xwpftk:DoubleUpDown Grid.Row="4" 
+                                         Grid.Column="1"
+                                         Increment="0.01"
+                                         Margin="3"
+                                         FormatString="F"
+                                         VerticalContentAlignment="Center" 
+                                         HorizontalContentAlignment="Center"
+                                         Height="19.96"
+                                         Minimum="0"
+                    ></xwpftk:DoubleUpDown>
+                </Grid>
+            </GroupBox>
+            <GroupBox Header="Информация о лифтовом холле на основном расчетном этаже:" Margin="5">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition  Width="330"></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <Label Grid.Column="0" Grid.Row="0">
+                        <TextBlock Text="Высота дверного проема лифтового холла, (м):"
+                                   TextWrapping="Wrap"/>
+                    </Label>
+                    <xwpftk:DoubleUpDown Grid.Row="0" 
+                                         Grid.Column="1"
+                                         Increment="0.01"
+                                         Margin="3"
+                                         FormatString="F"
+                                         VerticalContentAlignment="Center" 
+                                         HorizontalContentAlignment="Center"
+                                         Height="19.96"
+                                         Minimum="0"
+                    ></xwpftk:DoubleUpDown>
+
+                    <Label Grid.Column="0" Grid.Row="1">
+                        <TextBlock Text="Ширина дверного проема лифтового холла, (м):"
+                                   TextWrapping="Wrap"/>
+                    </Label>
+                    <xwpftk:DoubleUpDown Grid.Row="1" 
+                                         Grid.Column="1"
+                                         Increment="0.01"
+                                         Margin="3"
+                                         FormatString="F"
+                                         VerticalContentAlignment="Center" 
+                                         HorizontalContentAlignment="Center"
+                                         Height="19.96"
+                                         Minimum="0"
+                    ></xwpftk:DoubleUpDown>
+
+                    <Label Grid.Column="0" Grid.Row="2">
+                        <TextBlock Text="Площадь дверного проема лифтового холла, (м²):"
+                                   TextWrapping="Wrap"/>
+                    </Label>
+                    <xwpftk:DoubleUpDown Grid.Row="2" 
+                                         Grid.Column="1"
+                                         Increment="0.01"
+                                         Margin="3"
+                                         FormatString="F"
+                                         VerticalContentAlignment="Center" 
+                                         HorizontalContentAlignment="Center"
+                                         Height="19.96"
+                                         Minimum="0"
+                    ></xwpftk:DoubleUpDown>
+                </Grid>
+            </GroupBox>
+
+            <GroupBox Header="Дополнительная информация" Margin="5">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="330"></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <Label Grid.Column="0" Grid.Row="0">
+                        <TextBlock Text="Высотная отметка уровня пола второго этажа, (м):"
+                                   TextWrapping="Wrap"/>
+                    </Label>
+                    <xwpftk:DoubleUpDown Grid.Row="0" 
+                                         Grid.Column="1"
+                                         Increment="0.01"
+                                         Margin="3"
+                                         FormatString="F"
+                                         VerticalContentAlignment="Center" 
+                                         HorizontalContentAlignment="Center"
+                                         Height="19.96"
+                                         Minimum="0"
+                    ></xwpftk:DoubleUpDown>
+
+                    <Label Grid.Column="0" Grid.Row="1">
+                        <TextBlock Text="Высота дверного проема лифтовой шахты на основном этаже, (м):"
+                                   TextWrapping="Wrap"/>
+                    </Label>
+                    <xwpftk:DoubleUpDown Grid.Row="1" 
+                                         Grid.Column="1"
+                                         Increment="0.01"
+                                         Margin="3"
+                                         FormatString="F"
+                                         VerticalContentAlignment="Center" 
+                                         HorizontalContentAlignment="Center"
+                                         Height="19.96"
+                                         Minimum="0"
+                    ></xwpftk:DoubleUpDown>
+
+                    <Label Grid.Column="0" Grid.Row="2">
+                        <TextBlock Text="Высота дверного проема лифтовой шахты на этаже выше основного, (м):"
+                                   TextWrapping="Wrap"/>
+                    </Label>
+                    <xwpftk:DoubleUpDown Grid.Row="2" 
+                                         Grid.Column="1"
+                                         Increment="0.01"
+                                         Margin="3"
+                                         FormatString="F"
+                                         VerticalContentAlignment="Center" 
+                                         HorizontalContentAlignment="Center"
+                                         Height="19.96"
+                                         Minimum="0"
+                    ></xwpftk:DoubleUpDown>
+
+                    <Label Grid.Column="0" Grid.Row="3">
+                        <TextBlock Text="Количество дверей лифтового холла на основном расчетном этаже:"
+                                   TextWrapping="Wrap"/>
+                    </Label>
+                    <xwpftk:DoubleUpDown Grid.Row="3" 
+                                         Grid.Column="1"
+                                         Increment="0.01"
+                                         Margin="3"
+                                         FormatString="F"
+                                         VerticalContentAlignment="Center" 
+                                         HorizontalContentAlignment="Center"
+                                         Height="19.96"
+                                         Minimum="0"
+                    ></xwpftk:DoubleUpDown>
+
+                    <Label Grid.Column="0" Grid.Row="4">
+                        <TextBlock Text="Высота расположения воздухозаборного отверстия вентилятора подпора относительно отметки уровня земли, (м):"
                                    TextWrapping="Wrap"/>
                     </Label>
                     <xwpftk:DoubleUpDown Grid.Row="4" 
@@ -141,14 +292,43 @@
                                          Minimum="0"
                     ></xwpftk:DoubleUpDown>
 
+                    <Label Grid.Column="0" Grid.Row="5">
+                        <TextBlock Text="Количество этажей надземной части здания, (шт.):"
+                                   TextWrapping="Wrap"/>
+                    </Label>
+                    <xwpftk:DoubleUpDown Grid.Row="5" 
+                                         Grid.Column="1"
+                                         Increment="0.01"
+                                         Margin="3"
+                                         FormatString="F"
+                                         VerticalContentAlignment="Center" 
+                                         HorizontalContentAlignment="Center"
+                                         Height="19.96"
+                                         Minimum="0"
+                    ></xwpftk:DoubleUpDown>
 
-
-
-
+                    <Label Grid.Column="0" Grid.Row="6">
+                        <TextBlock Text="Укажите номер этажа, который является основным расчетным:"
+                                   TextWrapping="Wrap"/>
+                    </Label>
+                    <xwpftk:DoubleUpDown Grid.Row="6" 
+                                         Grid.Column="1"
+                                         Increment="0.01"
+                                         Margin="3"
+                                         FormatString="F"
+                                         VerticalContentAlignment="Center" 
+                                         HorizontalContentAlignment="Center"
+                                         Height="19.96"
+                                         Minimum="0"
+                    ></xwpftk:DoubleUpDown>
                 </Grid>
-                    
-
             </GroupBox>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Height="40">
+                <Button Content="Назад" Margin="5" Width="80"></Button>
+                <Button Content="Этажи" Margin="5" Width="80"></Button>
+                <Button Content="Далее" Margin="5" Width="80"></Button>
+
+            </StackPanel>
 
         </StackPanel>
 

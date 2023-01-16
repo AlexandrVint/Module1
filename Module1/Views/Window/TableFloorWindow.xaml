@@ -1,0 +1,46 @@
+﻿<Window x:Class="Module1.Views.Window.TableFloorWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Module1.Views.Window"
+        xmlns:fa5="http://schemas.fontawesome.com/icons/"
+        mc:Ignorable="d"
+        Title="TableFloorWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Menu Grid.Row="0">
+            <MenuItem Header="Файл">
+                <MenuItem Header="Открыть" FontSize="12">
+                    <MenuItem.Icon>
+                        <fa5:FontAwesome Icon="Regular_File" Height="12"></fa5:FontAwesome>
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Header="Сохранить">
+                    <MenuItem.Icon>
+                        <fa5:FontAwesome Icon="Regular_Save"  Height="20"></fa5:FontAwesome>
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Header="Закрыть" Command="{Binding CloseApplicationCommand}">
+                    <MenuItem.Icon>
+                        <fa5:FontAwesome Icon="Solid_DoorClosed"  Height="20"></fa5:FontAwesome>
+                    </MenuItem.Icon>
+                </MenuItem>
+            </MenuItem>
+            <MenuItem Header="Помощь"></MenuItem>
+            <MenuItem Header="О программе"></MenuItem>
+        </Menu>
+
+        <DataGrid Grid.Row="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"></DataGrid>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Grid.Row="2" VerticalAlignment="Bottom">
+            <Button Content="Назад" Margin="10" Width="80"></Button>
+            <Button Content="Применить" Margin="10" Width="80"></Button>
+        </StackPanel>
+        
+    </Grid>
+</Window>
