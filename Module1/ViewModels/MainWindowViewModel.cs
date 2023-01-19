@@ -7,6 +7,7 @@ using System.Windows.Markup;
 using System.Xaml;
 using Module1.Infrastructure.Commands;
 using Module1.ViewModels.Base;
+using Module1.Views.Window;
 
 namespace Module1.ViewModels
 {
@@ -14,6 +15,13 @@ namespace Module1.ViewModels
     internal class MainWindowViewModel : ViewModel
     {
         
+
+
+
+
+
+
+
 
         #region Заголовок окна
 
@@ -59,10 +67,10 @@ namespace Module1.ViewModels
 
         private void OnOpenInialDataWindow(object p)
         {
-            InitialDataWindow initialDataWindow = new InitialDataWindow();
+            InitialDataWindowUserControl initialDataWindow = new InitialDataWindowUserControl();
             MainWindow mainWindow = new MainWindow();
             initialDataWindow.Show();
-  
+
         }
 
         private bool CanOpenInialDataWindow(object p)

@@ -10,22 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
-using Module1WPFtest.ViewModels;
 
-namespace Module1WPFtest
+namespace Module1.Views.Window
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Логика взаимодействия для TableFloorWindowUserControl.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class TableFloorWindowUserControl : System.Windows.Window
     {
-        public MainWindow()
+        public TableFloorWindowUserControl()
         {
             InitializeComponent();
-
-            DataContext = new MainViewModel();
         }
     }
 }

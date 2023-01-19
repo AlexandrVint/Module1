@@ -8,23 +8,19 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Module1
+namespace Module1WPFtest.Views
 {
     /// <summary>
-    /// Логика взаимодействия для InitialDataWindow.xaml
+    /// Логика взаимодействия для AccountViewUserControl.xaml
     /// </summary>
-    public partial class InitialDataWindow : Window
+    public partial class AccountViewUserControl : UserControl
     {
-       
-
-
-
-        public InitialDataWindow()
+        public AccountViewUserControl()
         {
             InitializeComponent();
- 
         }
     }
 }

@@ -4,10 +4,23 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Module1WPFtest"
+        xmlns:views="clr-namespace:Module1WPFtest.Views"
+        xmlns:viewmodels="clr-namespace:Module1WPFtest.ViewModels"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
 
     <Grid>
-        <Image Source="images/Image1.png"></Image>
+    <Grid.RowDefinitions>
+        <RowDefinition Height="*"></RowDefinition>
+        <RowDefinition Height="Auto"></RowDefinition>
+    </Grid.RowDefinitions>
+
+        <ContentControl Content="{Binding SelectViewModel}"/>
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Content="Home" Margin="10" Width="200" Command="{Binding UpdateViewCommand}" CommandParameter="Home"></Button>
+            <Button Content="Account" Margin="10" Width="200" Command="{Binding UpdateViewCommand}" CommandParameter="Account"></Button>
+        </StackPanel>
+
     </Grid>
 </Window>

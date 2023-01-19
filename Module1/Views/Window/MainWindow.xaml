@@ -19,6 +19,9 @@
     </Window.DataContext>
 
     <Grid>
+        
+
+
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="4*"/>
             <ColumnDefinition Width="21*"/>
@@ -27,6 +30,9 @@
             <RowDefinition></RowDefinition>
             <RowDefinition Height="Auto"></RowDefinition>
         </Grid.RowDefinitions>
+
+        <ContentControl Content="SelectedViewModel"></ContentControl>
+
         <DockPanel Grid.Row="0" Grid.ColumnSpan="2">
             <Menu DockPanel.Dock="Top">
                 <MenuItem Header="Файл">
