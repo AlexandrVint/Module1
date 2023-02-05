@@ -325,8 +325,8 @@
             </GroupBox>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Height="40">
                 <Button Content="Назад" Margin="5" Width="80"></Button>
-                <Button Content="Этажи" Margin="5" Width="80"></Button>
-                <Button Content="Далее" Margin="5" Width="80" Command="{Binding StartTableFloorWindow}"></Button>
+                <Button Content="Этажи" Margin="5" Width="80" Command="{Binding StartTableFloorWindow}"></Button>
+                <Button Content="Далее" Margin="5" Width="80" ></Button>
 
             </StackPanel>
 
