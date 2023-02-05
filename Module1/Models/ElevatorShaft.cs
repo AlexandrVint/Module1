@@ -12,6 +12,8 @@ namespace Module1.Models
     /// </summary>
     public class ElevatorShaft:ViewModel
     {
+        public int Id { get; set; }
+
         #region CabinCount : int - количество кабин в лифтовой шахте
 
         /// <summary>
@@ -45,7 +47,7 @@ namespace Module1.Models
 
         #endregion
 
-
+        
 
 
     }
