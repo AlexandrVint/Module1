@@ -8,16 +8,12 @@
 
   <ItemGroup>
     <Compile Remove="Infrastructure\Converters\**" />
-    <Compile Remove="Models\**" />
     <Compile Remove="Resources\**" />
     <EmbeddedResource Remove="Infrastructure\Converters\**" />
-    <EmbeddedResource Remove="Models\**" />
     <EmbeddedResource Remove="Resources\**" />
     <None Remove="Infrastructure\Converters\**" />
-    <None Remove="Models\**" />
     <None Remove="Resources\**" />
     <Page Remove="Infrastructure\Converters\**" />
-    <Page Remove="Models\**" />
     <Page Remove="Resources\**" />
   </ItemGroup>
 

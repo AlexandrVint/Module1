@@ -23,5 +23,10 @@ namespace Module1.Views.Window
         {
             InitializeComponent();
         }
+
+        private void Accept_Click(object sender, RoutedEventArgs e)
+        {
+            DialogResult = true;
+        }
     }
 }

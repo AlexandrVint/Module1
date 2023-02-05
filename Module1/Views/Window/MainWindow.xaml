@@ -61,7 +61,7 @@
                         HorizontalAlignment="Right" 
                         Content="Далее" 
                         FontSize="18"
-                        Command="{Binding OpenInialDataWindow}">
+                        >
 
                  
                 </Button>

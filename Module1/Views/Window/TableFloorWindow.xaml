@@ -39,7 +39,7 @@
         <DataGrid Grid.Row="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"></DataGrid>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Grid.Row="2" VerticalAlignment="Bottom">
             <Button Content="Назад" Margin="10" Width="80"></Button>
-            <Button Content="Применить" Margin="10" Width="80"></Button>
+            <Button Content="Применить" Margin="10" Width="80" IsDefault="True" Click="Accept_Click"></Button>
         </StackPanel>
 
     

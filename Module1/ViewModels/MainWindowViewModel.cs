@@ -61,24 +61,7 @@ namespace Module1.ViewModels
 
         #endregion
 
-        #region OpenInialDataWindow - открытие окна OpenInialDataWindow (Исходные данные)
-
-        public ICommand OpenInialDataWindow { get; }
-
-        private void OnOpenInialDataWindow(object p)
-        {
-            InitialDataWindow initialDataWindow = new InitialDataWindow();
-            MainWindow mainWindow = new MainWindow();
-            initialDataWindow.Show();
-
-        }
-
-        private bool CanOpenInialDataWindow(object p)
-        {
-            return true;
-        }
-
-        #endregion
+        
 
        
 
@@ -95,7 +78,7 @@ namespace Module1.ViewModels
         public MainWindowViewModel()
         {
             CloseApplicationCommand = new LambdaCommand(OnCloseApplicationCommand, CanCloseApplicationCommand);
-            OpenInialDataWindow = new LambdaCommand(OnOpenInialDataWindow, CanOpenInialDataWindow);
+            
         }
 
 
