@@ -7,7 +7,7 @@ using Module1.Annotations;
 
 namespace Module1.ViewModels.Base
 {
-    internal abstract class ViewModel : INotifyPropertyChanged
+    public abstract class ViewModel : INotifyPropertyChanged
     {
 
         #region Реализация интерфейса INotifyPropertyChanged минимально необходимое

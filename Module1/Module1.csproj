@@ -7,17 +7,26 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Infrastructure\Converters\**" />
+    <Compile Remove="Models\**" />
+    <Compile Remove="Resources\**" />
+    <EmbeddedResource Remove="Infrastructure\Converters\**" />
+    <EmbeddedResource Remove="Models\**" />
+    <EmbeddedResource Remove="Resources\**" />
+    <None Remove="Infrastructure\Converters\**" />
+    <None Remove="Models\**" />
+    <None Remove="Resources\**" />
+    <Page Remove="Infrastructure\Converters\**" />
+    <Page Remove="Models\**" />
+    <Page Remove="Resources\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="Images\Image.PNG" />
     <None Remove="Images\Image1.PNG" />
     <None Remove="Images\Image2.PNG" />
     <None Remove="Images\Окно 1. Расчет подпора воздуха в шахту.png" />
     <None Remove="Images\Окно 2. Исходные данные.png" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Infrastructure\Converters\" />
-    <Folder Include="Models\" />
-    <Folder Include="Resources\Styles\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -32,6 +41,10 @@
     <Resource Include="Images\Image2.PNG">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Services\" />
   </ItemGroup>
 
 </Project>

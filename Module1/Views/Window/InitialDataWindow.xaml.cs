@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace Module1.Views.Window
 {
     /// <summary>
-    /// Логика взаимодействия для TableFloorWindowUserControl.xaml
+    /// Логика взаимодействия для InitialDataWindow.xaml
     /// </summary>
-    public partial class TableFloorWindowUserControl : System.Windows.Window
+    public partial class InitialDataWindow : System.Windows.Window
     {
-        public TableFloorWindowUserControl()
+        public InitialDataWindow()
         {
             InitializeComponent();
         }

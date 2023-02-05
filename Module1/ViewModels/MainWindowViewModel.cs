@@ -67,7 +67,7 @@ namespace Module1.ViewModels
 
         private void OnOpenInialDataWindow(object p)
         {
-            InitialDataWindowUserControl initialDataWindow = new InitialDataWindowUserControl();
+            InitialDataWindow initialDataWindow = new InitialDataWindow();
             MainWindow mainWindow = new MainWindow();
             initialDataWindow.Show();
 
