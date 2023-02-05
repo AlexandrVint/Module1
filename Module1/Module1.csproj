@@ -28,6 +28,7 @@
   <ItemGroup>
     <PackageReference Include="Extended.Wpf.Toolkit" Version="4.5.0" />
     <PackageReference Include="FontAwesome5" Version="2.1.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.2" />
   </ItemGroup>
 
   <ItemGroup>

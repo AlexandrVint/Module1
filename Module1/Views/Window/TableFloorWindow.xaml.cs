@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Module1.Models;
 
 namespace Module1.Views.Window
 {
@@ -19,9 +20,14 @@ namespace Module1.Views.Window
     /// </summary>
     public partial class TableFloorWindow : System.Windows.Window
     {
-        public TableFloorWindow()
+        public ElevatorShaft ElevatorShaft { get; private set; }
+
+
+        public TableFloorWindow(ElevatorShaft elevatorShaft)
         {
             InitializeComponent();
+            ElevatorShaft = elevatorShaft;
+            DataContext = ElevatorShaft;
         }
 
         private void Accept_Click(object sender, RoutedEventArgs e)
