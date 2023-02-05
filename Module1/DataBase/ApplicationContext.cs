@@ -16,7 +16,7 @@ namespace Module1.DataBase
         // метод создания файла базы данных с данными ElevatorShaft
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlite("Data Source=elevatorshaftapp.db");
+            optionsBuilder.UseSqlite("Data Source=elevatorshaftap.db");
         }
 
     }
