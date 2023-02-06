@@ -6,8 +6,20 @@
         xmlns:local="clr-namespace:Module1.Views.Window"
         xmlns:fa5="http://schemas.fontawesome.com/icons/"
         mc:Ignorable="d"
-        Title="TableFloorWindow" Height="450" Width="800">
+        Title="TableFloorWindow" 
+        Height="450" Width="800" 
+        MinHeight="450" MinWidth="800"
+        MaxHeight="450" MaxWidth="800">
+    <Window.Resources>
+        <Style x:Key="HeaderStyle" TargetType="DataGridCell">
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"></Setter>
+            <Setter Property="Margin" Value="5"></Setter>
+            
+        </Style>
+    </Window.Resources>
     <Grid>
+        
         <Grid.RowDefinitions>
             <RowDefinition Height="25"></RowDefinition>
             <RowDefinition Height="Auto"></RowDefinition>
@@ -36,7 +48,78 @@
             <MenuItem Header="О программе"></MenuItem>
         </Menu>
 
-        <DataGrid Grid.Row="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"></DataGrid>
+        <DataGrid Grid.Row="1" 
+                  VerticalAlignment="Stretch" 
+                  HorizontalAlignment="Stretch"
+                  HorizontalContentAlignment="Center"
+                  VerticalContentAlignment="Center"
+                  AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn MinWidth="45" MaxWidth="45" CellStyle="{StaticResource HeaderStyle}">
+                    <DataGridTextColumn.Header>
+                        <TextBlock Text="Этаж" 
+                                   FontSize="14" 
+                                   FontWeight="Bold"/>
+                    </DataGridTextColumn.Header>
+                </DataGridTextColumn>
+                <DataGridTextColumn MinWidth="80" MaxWidth="80" CellStyle="{Binding HeaderStyle}">
+                    <DataGridTextColumn.Header>
+                        <TextBlock Text="Высотаня отметка этажа, (м)" 
+                                   FontSize="14" 
+                                   FontWeight="Bold" 
+                                   TextWrapping="Wrap"
+                                   TextAlignment="Center"/>
+                    </DataGridTextColumn.Header>
+                </DataGridTextColumn>
+                <DataGridCheckBoxColumn MinWidth="75" MaxWidth="75" CellStyle="{Binding HeaderStyle}">
+                    <DataGridCheckBoxColumn.Header>
+                        <TextBlock Text="Наличие дверного проема"
+                                   FontSize="14" 
+                                   FontWeight="Bold" 
+                                   TextWrapping="Wrap"
+                                   TextAlignment="Center"></TextBlock>
+                    </DataGridCheckBoxColumn.Header>
+                </DataGridCheckBoxColumn>
+                <DataGridTextColumn MinWidth="150" MaxWidth="150" CellStyle="{Binding HeaderStyle}">
+                    <DataGridTextColumn.Header>
+                        <TextBlock Text="Суммарная площадь дверных проемов лифтового холла, (м²)" 
+                                   FontSize="14" 
+                                   FontWeight="Bold" 
+                                   TextWrapping="Wrap"
+                                   TextAlignment="Center"/>
+                    </DataGridTextColumn.Header>
+                </DataGridTextColumn>
+                <DataGridTextColumn MinWidth="150" MaxWidth="150" CellStyle="{StaticResource HeaderStyle}">
+                    <DataGridTextColumn.Header>
+                        <TextBlock Text="Суммарная площадь дверных проемов лифтовой шахты, (м²)" 
+                                   FontSize="14" 
+                                   FontWeight="Bold" 
+                                   TextWrapping="Wrap"
+                                   TextAlignment="Center"/>
+                    </DataGridTextColumn.Header>
+                </DataGridTextColumn>
+
+                <DataGridTextColumn MinWidth="150" MaxWidth="150" CellStyle="{StaticResource HeaderStyle}">
+                    <DataGridTextColumn.Header>
+                        <TextBlock Text="Суммарная характеристика сопротивления проемов лифтового холла и лифтовой шахты, (1/(кг·м²))" 
+                                   FontSize="14" 
+                                   FontWeight="Bold" 
+                                   TextWrapping="Wrap"
+                                   TextAlignment="Center"/>
+                    </DataGridTextColumn.Header>
+                </DataGridTextColumn>
+                
+                <DataGridTextColumn MinWidth="150" MaxWidth="150" CellStyle="{StaticResource HeaderStyle}">
+                    <DataGridTextColumn.Header>
+                        <TextBlock Text="Высота дверного проема лифтовой шахты на каждом этаже, (м)" 
+                                   FontSize="14" 
+                                   FontWeight="Bold" 
+                                   TextWrapping="Wrap"
+                                   TextAlignment="Center"/>
+                    </DataGridTextColumn.Header>
+                </DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Grid.Row="2" VerticalAlignment="Bottom">
             <Button Content="Назад" Margin="10" Width="80"></Button>
             <Button Content="Применить" Margin="10" Width="80" IsDefault="True" Click="Accept_Click"></Button>
