@@ -79,5 +79,17 @@ namespace Module1.Models
             set => Set(ref _MainFloor, value);
         }
         #endregion
+
+        #region FloorNumber : int - номер этажа
+        private int _FloorNumber;
+        /// <summary>
+        /// номер этажа
+        /// </summary>
+        public int FloorNumber
+        {
+            get => _FloorNumber;
+            set => Set(ref _FloorNumber, value);
+        }
+        #endregion
     }
 }

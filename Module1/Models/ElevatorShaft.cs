@@ -30,7 +30,7 @@ namespace Module1.Models
 
         #endregion
 
-        #region HeightDoorCabin : double - высота двери кабины лифта на основном этаже
+        #region HeightDoorCabin : double - высота двери кабины лифта на этаже
 
         /// <summary>
         /// Свойство Высота двери лифтовой шахты
@@ -47,7 +47,7 @@ namespace Module1.Models
 
         #endregion
 
-        #region WishtDoorCabin : double - ширина дверного проема лифтовой шахты на основном этаже
+        #region WishtDoorCabin : double - ширина дверного проема лифтовой шахты на этаже
 
         /// <summary>
         /// Свойство ширина дверного проема лифтовой шахты
@@ -63,7 +63,7 @@ namespace Module1.Models
 
         #endregion
 
-        #region DoorAreaCabin : double - площадь дверного проема лифтовой шахты на основном этаже
+        #region DoorAreaCabin : double - площадь дверного проема лифтовой шахты на этаже
 
         /// <summary>
         /// Свойство площадь дверного проема лифтовой шахты

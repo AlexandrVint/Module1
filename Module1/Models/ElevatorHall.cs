@@ -29,7 +29,7 @@ namespace Module1.Models
         }
         #endregion
 
-        #region HieghtDoorHall : double - Высота двери дверного холла на основном этаже
+        #region HieghtDoorHall : double - Высота двери дверного холла на  этаже
         /// <summary>
         /// Высота двери дверного холла
         /// </summary>
@@ -42,7 +42,7 @@ namespace Module1.Models
         }
         #endregion
 
-        #region WidthDoorHall : double - Ширина дверного проема лифтового холла на основном этаже
+        #region WidthDoorHall : double - Ширина дверного проема лифтового холла на этаже
         /// <summary>
         /// Ширина дверного проема лифтового холла
         /// </summary>
@@ -55,7 +55,7 @@ namespace Module1.Models
         }
         #endregion
 
-        #region DoorAreaHall : double - Площадь двери лифотового холла на основном этаже
+        #region DoorAreaHall : double - Площадь двери лифотового холла на  этаже
         /// <summary>
         /// Площадь двери лифотового холла на основном этаже
         /// </summary>
@@ -68,7 +68,7 @@ namespace Module1.Models
         }
         #endregion
 
-        #region HaveDoorOnFloorHall : bool - наличие дверей на основном этаже в лифтовом холле
+        #region HaveDoorOnFloorHall : bool - наличие дверей на этаже в лифтовой холле
         /// <summary>
         /// наличие дверей на основном этаже в лифтовом холле
         /// </summary>
