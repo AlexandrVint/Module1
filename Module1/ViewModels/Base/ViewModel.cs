@@ -39,7 +39,7 @@ namespace Module1.ViewModels.Base
         }
         #endregion
 
-
+        //
 
     }
 
