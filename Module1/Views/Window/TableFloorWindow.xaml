@@ -64,7 +64,7 @@
                 </DataGridTextColumn>
                 <DataGridTextColumn MinWidth="80" MaxWidth="80" >
                     <DataGridTextColumn.Header>
-                        <TextBlock Text="Высотаня отметка этажа, (м)" 
+                        <TextBlock Text="Высотаная отметка этажа, (м)" 
                                    FontSize="14" 
                                    FontWeight="Bold" 
                                    TextWrapping="Wrap"
