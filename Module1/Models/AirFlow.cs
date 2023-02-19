@@ -26,5 +26,6 @@ namespace Module1.Models
         public double AirFlowL { get; set; }
         #endregion
 
+        //
     }
 }
