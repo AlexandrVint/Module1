@@ -14,125 +14,60 @@ namespace Module1.Models
     {
         public int Id { get; set; }
 
-        #region CabinCount : int - количество кабин в лифтовой шахте
-
+        #region CabinCount : int - количество кабин в лифтовой шахте   
         /// <summary>
-        /// Свойство Количество кабин в лифтовой шахте 
+        /// количество кабин в лифтовой шахте
         /// </summary>
-
-        private int _CabinCount;
-
-        public int CabinCount
-        {
-            get => _CabinCount;
-            set => Set(ref _CabinCount, value);
-        }
-
+        public int CabinCount { get; set; }
         #endregion
 
-        #region HeightDoorCabin : double - высота двери кабины лифта на этаже
-
+        #region HeightDoorCabin : double - высота двери кабины лифта на этаже   
         /// <summary>
-        /// Свойство Высота двери лифтовой шахты
+        /// высота двери кабины лифта на этаже
         /// </summary>
-
-        private double _HeightDoorCabin;
-
-        public double HeightDoorCabin
-        {
-            get => _HeightDoorCabin;
-
-            set => Set(ref _HeightDoorCabin, value);
-        }
-
+        public double HeightDoorCabin { get; set; }
         #endregion
 
-        #region WishtDoorCabin : double - ширина дверного проема лифтовой шахты на этаже
-
+        #region WishtDoorCabin : double - ширина дверного проема лифтовой шахты на этаже   
         /// <summary>
-        /// Свойство ширина дверного проема лифтовой шахты
+        /// ширина дверного проема лифтовой шахты на этаже
         /// </summary>
-        private double _WidhtDoorCabin;
-
-        public double WishtDoorCabin
-        {
-            get => _WidhtDoorCabin;
-            set => Set(ref _WidhtDoorCabin, value);
-
-        }
-
+        public double WishtDoorCabin { get; set; }
         #endregion
 
-        #region DoorAreaCabin : double - площадь дверного проема лифтовой шахты на этаже
-
+        #region DoorAreaCabin : double - площадь дверного проема лифтовой шахты на этаже   
         /// <summary>
-        /// Свойство площадь дверного проема лифтовой шахты
+        /// площадь дверного проема лифтовой шахты на этаже
         /// </summary>
-
-        private double _DoorAreaCabin;
-
-        public double DoorAreaCabin
-        {
-            get => _DoorAreaCabin;
-            set => Set(ref _DoorAreaCabin, value);
-        }
-
+        public double DoorAreaCabin { get; set; }
         #endregion
 
-        #region AreaCabin : double - площадь поперечного сечения кабины лифта
-
+        #region AreaCabin : double - площадь поперечного сечения кабины лифта   
         /// <summary>
-        /// Свойство площадь поперечного сечения кабины лифта
+        /// площадь поперечного сечения кабины лифта
         /// </summary>
-
-        private double _AreaCabin;
-
-        public double AreaCabin
-        {
-            get => _AreaCabin;
-            set => Set(ref _AreaCabin, value);
-        }
-
-
+        public double AreaCabin { get; set; }
         #endregion
 
-        #region HaveDoorOnFlooShaft : bool - Наличие двеи в лифтовой шахте на основном этаже
+        #region HaveDoorOnFlooShaft : bool - Наличие двеи в лифтовой шахте на основном этаже   
         /// <summary>
         /// Наличие двеи в лифтовой шахте на основном этаже
         /// </summary>
-        private bool _HaveDoorOnFlooShaft;
-
-        public bool HaveDoorOnFlooShaft
-        {
-            get => _HaveDoorOnFlooShaft;
-            set => Set(ref _HaveDoorOnFlooShaft, value);
-        }
+        public bool HaveDoorOnFlooShaft { get; set; }
         #endregion
 
-        #region AreaShaft : double - Площадь поперечного сечения шахты лифта
+        #region AreaShaft : double - Площадь поперечного сечения шахты лифта   
         /// <summary>
         /// Площадь поперечного сечения шахты лифта
         /// </summary>
-        private double _AreaShaft;
-
-        public double AreaShaft
-        {
-            get => _AreaShaft;
-            set => Set(ref _AreaShaft, value);
-        }
+        public double AreaShaft { get; set; }
         #endregion
 
-        #region KMSshaft : double - Коэффициент местного сопротивления (КМС) шахты лифта
+        #region KMSshaft : double - Коэффициент местного сопротивления (КМС) шахты лифта   
         /// <summary>
         /// Коэффициент местного сопротивления (КМС) шахты лифта
         /// </summary>
-        private double _KMSshaft;
-
-        public double KMSshaft
-        {
-            get => _KMSshaft;
-            set => Set(ref _KMSshaft, value);
-        }
+        public double KMSshaft { get; set; }
         #endregion
 
 

@@ -15,70 +15,39 @@ namespace Module1.Models
     public  class ElevatorHall: ViewModel
     {
 
-        #region DoorCountOnFloor : int - количество дверных проемов лифтового холла на на основном этаже
-
+        #region DoorCountOnFloor : int - Свойство количество дверных проемов лифтового холла на этаже   
         /// <summary>
         /// Свойство количество дверных проемов лифтового холла на этаже
         /// </summary>
-        private int _DoorCountOnFloor;
-
-        public int DoorCountOnFloor
-        {
-            get => _DoorCountOnFloor;
-            set => Set(ref _DoorCountOnFloor, value);
-        }
+        public int DoorCountOnFloor { get; set; }
         #endregion
 
-        #region HieghtDoorHall : double - Высота двери дверного холла на  этаже
+        #region HieghtDoorHall : double - Высота двери дверного холла на  этаже   
         /// <summary>
-        /// Высота двери дверного холла
+        /// Высота двери дверного холла на  этаже
         /// </summary>
-        private double _HieghtDoorHall;
-
-        public double HieghtDoorHall
-        {
-            get => _HieghtDoorHall;
-            set => Set(ref _HieghtDoorHall, value);
-        }
+        public double HieghtDoorHall { get; set; }
         #endregion
 
-        #region WidthDoorHall : double - Ширина дверного проема лифтового холла на этаже
+        #region WidthDoorHall : double - Ширина дверного проема лифтового холла на этаже   
         /// <summary>
-        /// Ширина дверного проема лифтового холла
+        /// Ширина дверного проема лифтового холла на этаже
         /// </summary>
-        private double _WidthDoorHall;
-
-        public double WidthDoorHall
-        {
-            get => _WidthDoorHall;
-            set => Set(ref _WidthDoorHall, value);
-        }
+        public double WidthDoorHall { get; set; }
         #endregion
 
-        #region DoorAreaHall : double - Площадь двери лифотового холла на  этаже
+        #region DoorAreaHall : double - Площадь двери лифотового холла на  этаже   
         /// <summary>
-        /// Площадь двери лифотового холла на основном этаже
+        /// Площадь двери лифотового холла на  этаже
         /// </summary>
-        private double _DoorAreaHall;
-
-        public double DoorAreaHall
-        {
-            get => _DoorAreaHall;
-            set => Set(ref _DoorAreaHall, value);
-        }
+        public double DoorAreaHall { get; set; }
         #endregion
 
-        #region HaveDoorOnFloorHall : bool - наличие дверей на этаже в лифтовой холле
+        #region HaveDoorOnFloorHall : bool - наличие дверей на этаже в лифтовой холле   
         /// <summary>
-        /// наличие дверей на основном этаже в лифтовом холле
+        /// наличие дверей на этаже в лифтовой холле
         /// </summary>
-        private bool _HaveDoorOnFloorHall;
-
-        public bool HaveDoorOnFloorHall
-        {
-            get => _HaveDoorOnFloorHall;
-            set => Set(ref _HaveDoorOnFloorHall, value);
-        }
+        public bool HaveDoorOnFloorHall { get; set; }
         #endregion
 
         public const double KMS_Hall=2.44;

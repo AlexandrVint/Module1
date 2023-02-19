@@ -15,81 +15,46 @@ namespace Module1.Models
     {
         public int Id { get; set; }
 
-        #region FloorCount : int - Количество этажей надземной части здания
+        #region FloorCount : int - Количество этажей надземной части здания   
         /// <summary>
         /// Количество этажей надземной части здания
         /// </summary>
-        private int _FloorCount;
-
-        public int FloorCount
-        {
-            get => _FloorCount;
-            set => Set(ref _FloorCount, value);
-        }
+        public int FloorCount { get; set; }
         #endregion
 
-        #region FloorMark : double - отметка уровня пола этажей
+        #region FloorMark : double - отметка уровня пола этажей   
         /// <summary>
         /// отметка уровня пола этажей
         /// </summary>
-        private double _FloorMark;
-
-        public double FloorMark
-        {
-            get => _FloorMark;
-            set => Set(ref _FloorMark, value);
-        }
+        public double FloorMark { get; set; }
         #endregion
 
-        #region FloorMarkLevel2 : double - высотная отметка пола этажа второго этажа
+        #region FloorMarkLevel2 : double - высотная отметка пола этажа второго этажа   
         /// <summary>
         /// высотная отметка пола этажа второго этажа
         /// </summary>
-        private double _FloorMarkLevel2;
-
-        public double FloorMarkLevel2
-        {
-            get => _FloorMarkLevel2;
-            set => Set(ref _FloorMarkLevel2, value);
-        }
+        public double FloorMarkLevel2 { get; set; }
         #endregion
 
-        #region IntakeHeight : double - высота воздухозабора относительно уровня земли
+        #region IntakeHeight : double - высота воздухозабора относительно уровня земли   
         /// <summary>
         /// высота воздухозабора относительно уровня земли
         /// </summary>
-        private double _IntakeHeight;
-
-        public double IntakeHeight
-        {
-            get => _IntakeHeight;
-            set => Set(ref _IntakeHeight, value);
-        }
+        public double IntakeHeight { get; set; }
         #endregion
 
-        #region MainFloor : int - номер основного расченого этажа. Нижний этаж, на который приезжает лифтовая кабина
+        #region MainFloor : int - номер основного расченого этажа. Нижний этаж, на который приезжает лифтовая кабина   
         /// <summary>
         /// номер основного расченого этажа. Нижний этаж, на который приезжает лифтовая кабина
         /// </summary>
-        private int _MainFloor;
-
-        public int MainFloor
-        {
-            get => _MainFloor;
-            set => Set(ref _MainFloor, value);
-        }
+        public int MainFloor { get; set; }
         #endregion
 
-        #region FloorNumber : int - номер этажа
-        private int _FloorNumber;
+        #region FloorNumber : int - номер этажа   
         /// <summary>
         /// номер этажа
         /// </summary>
-        public int FloorNumber
-        {
-            get => _FloorNumber;
-            set => Set(ref _FloorNumber, value);
-        }
+        public int FloorNumber { get; set; }
         #endregion
     }
 }

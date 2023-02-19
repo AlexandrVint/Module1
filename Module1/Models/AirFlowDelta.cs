@@ -9,17 +9,14 @@ namespace Module1.Models
 {
     public class AirFlowDelta:ViewModel
     {
-        #region FlowDeltaDoorG : double - инфильтрация массового расхода воздуха через двери лифтовой шахты на жтаже
-        private double _FlowDeltaDoorG;
+
+        #region FlowDeltaDoorG : double - инфильтрация массового расхода воздуха через двери лифтовой шахты на жтаже   
         /// <summary>
-        /// инфильтрация воздуха 
+        /// инфильтрация массового расхода воздуха через двери лифтовой шахты на жтаже
         /// </summary>
-        public double FlowDeltaDoorG
-        {
-            get => _FlowDeltaDoorG;
-            set => Set(ref _FlowDeltaDoorG, value);
-        }
+        public double FlowDeltaDoorG { get; set; }
         #endregion
+
 
     }
 }
